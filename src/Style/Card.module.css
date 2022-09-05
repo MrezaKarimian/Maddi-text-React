@@ -1,0 +1,132 @@
+.body {
+  margin: 40px auto;
+  width: 500px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.userSection {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+.userSection::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.042);
+  z-index: 4;
+}
+.userDescription {
+  position: relative;
+  padding: 0px 20px;
+  width: 70%;
+  height: 100%;
+  z-index: 1;
+}
+.UserSectionDetail {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.level {
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.picture {
+  width: 110px;
+  height: 110px;
+  border: solid 2px #e74738;
+  border-radius: 50%;
+}
+.picture > img {
+  width: 100%;
+  height: 100%;
+}
+.points {
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.name {
+  color: rgb(72, 73, 74);
+  text-align: center;
+}
+.descriptionText {
+  line-height: 22px;
+  font-size: 14px;
+}
+.tip {
+  color: rgb(107, 107, 107);
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 14px;
+}
+
+
+.moreInfo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translateX(-100%);
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.4s;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .body:hover .moreInfo {
+    transform: translateX(0%);
+  }
+.coords{
+    margin: -20px 0px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.status{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 0px 20px;
+}
+.FontAwesomeIcon{
+    padding: 20px;
+}
+.value{
+    font-size: larger;
+    padding-top: 10px;
+}
