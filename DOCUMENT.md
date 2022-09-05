@@ -1,4 +1,4 @@
-3 layout made : header , section , footer
+3 layout made : Header , Section , Footer
 header simply used for name display.
 Cards are in Section.
 
