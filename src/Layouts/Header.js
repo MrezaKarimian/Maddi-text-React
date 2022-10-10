@@ -6,7 +6,6 @@ function Header() {
     <div className={styles.container}>
       <div>
         <div className={styles.title}>Mohamadreza Karimian</div>
-        <div className={styles.text}>Quest 2</div>
       </div>
     </div>
   );
